@@ -1,0 +1,42 @@
+.shop-cart{
+  box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+  position: sticky;
+  top: 0;
+  border-radius: 5px;
+}
+.shop-cart h2{
+  color: #fa983a;
+}
+.shop-cart h3{
+  color: #555;
+  margin: 10px 0;
+}
+.shop-cart h2,
+.shop-cart h3{
+  text-align: center;
+}
+.shop-cart table{
+  width: 100%;
+}
+.shop-cart table tr td{
+  padding: 8px 0;
+  font-size: 1rem;
+}
+.shop-cart table tr td:last-child{
+  text-align: right;
+}
+.shop-cart table tr:last-child td{
+  font-size: 1.5rem;
+}
+.shop-cart button{
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #e58e26;
+  border: 1px solid #999;
+  outline: none;
+  border-radius: 3px;
+}

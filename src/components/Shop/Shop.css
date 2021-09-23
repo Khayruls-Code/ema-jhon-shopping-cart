@@ -1,0 +1,20 @@
+.shop-container{
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.products{
+  flex: 3;
+}
+.cart{
+  flex: 1.1;
+}
+
+@media(max-width:1000px){
+  .shop-container{
+    flex-direction: column-reverse;
+  }
+}

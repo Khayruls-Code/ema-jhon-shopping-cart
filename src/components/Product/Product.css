@@ -1,0 +1,66 @@
+.singleProduct{
+  display: flex;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  padding: 15px;
+  gap: 20px;
+  border-radius: 5px;
+}
+.singleProduct .info h2{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2e86de;
+}
+.singleProduct .info .seller{
+  color: #333;
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+.singleProduct .info .price-star{
+  display: flex;
+  align-items: center;
+}
+.singleProduct .info .price-star .ratting{
+  margin-left: 200px;
+}
+.star{
+  color: #e58e26;
+}
+.singleProduct .info .price-star h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.singleProduct .info .stoke-feature .stoke{
+  margin: 15px 0;
+  color: #777;
+}
+.singleProduct .info .addToCartBtn{
+  padding: 8px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #e58e26;
+  border: 1px solid #999;
+  outline: none;
+  border-radius: 3px;
+}
+.singleProduct .info .addToCartBtn:hover{
+  background: #f19f3a;
+}
+
+@media(max-width:1000px){
+  .singleProduct .info .price-star .ratting{
+    margin-left: 0px;
+  }
+}
+@media (max-width:620px){
+  .singleProduct{
+    flex-direction: column;
+    text-align: center;
+  }
+  .singleProduct .info .price-star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
