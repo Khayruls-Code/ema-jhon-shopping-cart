@@ -2,18 +2,25 @@ const getCart = () => {
   const cart = localStorage.getItem('cart')
   let cartObj;
   if(!cart){
-    cartObj = []
+    cartObj = {}
   }else{
     cartObj = JSON.parse(cart)
   }
   return cartObj;
 }
 
-const fakeDb = (product) => {
-  const cart = getCart()
-  if(cart.indexOf(product) === -1){
-    cart.push = product;
-  }
+const addToLocal = (objectName) => {
+  localStorage.setItem('cart', JSON.stringify(objectName))
 }
 
-export default fakeDb;
+const fakeDb = (product) => {
+  const cart = getCart();
+  if(!cart[product]){
+    cart[product] = 1;
+  }else{
+    cart[product] = cart[product] + 1
+  }
+  addToLocal(cart)
+}
+
+export {fakeDb, getCart}

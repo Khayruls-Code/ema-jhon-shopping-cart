@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../../src/images/logo.png';
 import "./Header.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 
@@ -27,12 +27,6 @@ const Header = () => {
           <p>0</p>
         </div>
       </nav>
-      </div>
-      <div className="search">
-        <div className="box">
-        <input type="text" placeholder="Search Product by name..."/>
-        <button><FontAwesomeIcon className="searchIcon" icon={faSearch}/></button>
-        </div>
       </div>
     </div>
   );

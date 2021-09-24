@@ -4,9 +4,13 @@ const Cart = (props) => {
 
   let price = 0;
   let shipping = 0;
-
+  let quantity = 0
   for(let single of props.cart){
-    price += single.price
+    if(!single.quantity){
+      single.quantity = 1
+    }
+    price = price + single.price * single.quantity;
+    quantity = quantity + single.quantity;
     shipping += single.shipping
   }
 
@@ -17,7 +21,7 @@ const Cart = (props) => {
   return (
     <div className="shop-cart">
       <h2>Order Summery</h2>
-      <h3>Item Orderd: {props.cart.length}</h3>
+      <h3>Item Orderd: {quantity}</h3>
       <table>
         <tbody>
         <tr>
