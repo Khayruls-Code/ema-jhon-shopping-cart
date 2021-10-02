@@ -46,6 +46,9 @@
 .singleProduct .info .addToCartBtn:hover{
   background: #f19f3a;
 }
+.review-quantity{
+  margin: 10px 0;
+}
 
 @media(max-width:1000px){
   .singleProduct .info .price-star .ratting{
