@@ -4,9 +4,10 @@ import "./Header.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 
 const Header = () => {
-
+  const { user, singOutUser } = useAuth()
   return (
     <div className="container">
       <div className="header">
@@ -23,9 +24,25 @@ const Header = () => {
             <li><NavLink to="/review">Order Review</NavLink></li>
             <li><NavLink to="/inventory">Manage Inventory Here</NavLink></li>
           </ul>
-          <div className="cartIcon">
-            <FontAwesomeIcon className="icon" icon={faShoppingCart} />
-            <p>0</p>
+          <div className='cart-regi'>
+            <div className='login-regi'>
+              {
+                user.email ?
+                  <div className='userActice'>
+                    <button onClick={singOutUser}>Sing Out</button>
+                    <img src={user.photoURL} alt="" />
+                  </div>
+                  :
+                  <div>
+                    <NavLink className="login-btn" to="/login">Login</NavLink>
+                    <NavLink className="login-btn" to="/registration">Registration</NavLink>
+                  </div>
+              }
+            </div>
+            <div className="cartIcon">
+              <FontAwesomeIcon className="icon" icon={faShoppingCart} />
+              <p>0</p>
+            </div>
           </div>
         </nav>
       </div>

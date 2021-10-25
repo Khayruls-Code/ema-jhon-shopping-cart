@@ -11,7 +11,7 @@ const Shop = (props) => {
   //get Product from products.json
   const [products, setProducts] = useState([])
   useEffect(() => {
-    fetch("products.JSON")
+    fetch("products.json")
       .then(res => res.json())
       .then(data => {
         setProducts(data)
@@ -34,7 +34,6 @@ const Shop = (props) => {
       newCart = [...cart, product]
     }
     setCart(newCart)
-    console.log(newCart)
     fakeDb(product.key)
   }
 

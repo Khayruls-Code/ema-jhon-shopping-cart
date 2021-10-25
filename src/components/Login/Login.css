@@ -1,0 +1,79 @@
+.form-container{
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+}
+.login{
+  width: 400px;
+  background: #e58e26;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.login form{
+  padding: 20px 40px;
+}
+.login form div{
+  margin: 15px 0;
+}
+.login form input{
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.login form input[type='submit']{
+  background: #ad6205;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.form-title{
+  padding: 20px 0;
+  text-align: center;
+  background: #ad6205;
+  color: #fff;
+}
+.extra-login{
+  padding: 10px 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.extra-login div{
+  padding: 10px 15px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.extra-login div i{
+  color: #fff;
+  font-size: 1.4rem;
+}
+.extra-login div p{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+}
+.google{
+  background: #e8554e;
+}
+.facebook{
+  background-color: #395899;
+}
+.haveAccount{
+  margin-top: 20px;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.haveAccount .link{
+  color: aqua;
+}

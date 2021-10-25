@@ -39,7 +39,7 @@ nav ul{
 nav ul li a{
   display: inline-block;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 1.1rem;
   text-decoration: none;
   border-left: 1px solid rgba(255,255,255,0.2);
@@ -50,6 +50,7 @@ nav ul li a:hover{
 }
 .cartIcon{
   position: relative;
+  margin-left: 50px;
 }
 .icon{
   color: #fff;
@@ -96,6 +97,38 @@ nav ul li a:hover{
 .box button{
   width: 50px;
 }
+/* login registration */
+.cart-regi{
+  display: flex;
+  align-items: center;
+}
+.login-btn,
+.cart-regi button{
+  display: inline-block;
+  padding: 5px 15px;
+  background: #10ac84;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 5px;
+}
+.cart-regi button{
+  border: none;
+  outline: none;
+  padding: 7px 15px;
+}
+.userActice{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.userActice img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* login registration */
 @media (max-width:620px) {
   .header{
     flex-direction: column;

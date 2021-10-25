@@ -1,0 +1,35 @@
+.shipping{
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+}
+
+.shipping-form{
+  background: #efefef;
+  padding: 40px;
+  width: 500px;
+  border-radius: 10px;
+}
+.shipping-form input{
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+.shipping-form input:focus{
+  outline: 1px solid crimson;
+}
+.shipping-form input[type=submit]:focus{
+  outline: none;
+}
+.shipping-form input[type=submit]{
+  background: crimson;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
